@@ -1,6 +1,6 @@
 package com.klindziuk.parsing.dom;
 
-import com.klindziuk.model.BookCommand;
+import com.klindziuk.parsing.model.BookCommand;
 import com.sun.org.apache.xerces.internal.parsers.DOMParser;
 
 import org.w3c.dom.Document;

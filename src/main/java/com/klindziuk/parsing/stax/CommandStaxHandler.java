@@ -1,7 +1,7 @@
 package com.klindziuk.parsing.stax;
 
-import com.klindziuk.model.BookCommand;
-import com.klindziuk.command.TagEnum;
+import com.klindziuk.parsing.command.TagEnum;
+import com.klindziuk.parsing.model.BookCommand;
 
 import javax.xml.stream.XMLStreamConstants;
 import javax.xml.stream.XMLStreamException;

@@ -4,8 +4,8 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-import com.klindziuk.model.BookCommand;
-import com.klindziuk.command.TagEnum;
+import com.klindziuk.parsing.command.TagEnum;
+import com.klindziuk.parsing.model.BookCommand;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -9,7 +9,7 @@ import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 
-import com.klindziuk.model.BookCommand;
+import com.klindziuk.parsing.model.BookCommand;
 
 public class CommandStaxParser {
 	private final static String INVALID_PATH_EXCEPTION_MESSAGE = "System canot find file or path.";

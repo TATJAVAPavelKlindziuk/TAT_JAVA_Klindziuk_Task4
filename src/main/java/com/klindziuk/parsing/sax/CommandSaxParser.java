@@ -5,7 +5,7 @@ import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.XMLReaderFactory;
 
-import com.klindziuk.model.BookCommand;
+import com.klindziuk.parsing.model.BookCommand;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

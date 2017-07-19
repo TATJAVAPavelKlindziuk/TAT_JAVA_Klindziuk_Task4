@@ -3,7 +3,7 @@ import java.io.FileNotFoundException;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
-import com.klindziuk.manage.ParserManager;
+import com.klindziuk.parsing.manage.ParserManager;
 
 public class Runner {
 	private final static Logger logger = LogManager.getRootLogger();
