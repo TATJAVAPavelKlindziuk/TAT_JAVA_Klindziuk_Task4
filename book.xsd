@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.epam.mn.com/book" xmlns:tns="http://www.epam.mn.com/book"
+	elementFormDefault="qualified">
+
+	<!--complex type for root element -->
+	<xs:element name="book">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="service" type="tns:Service" minOccurs="1"
+					maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!--complex type for element part -->
+	<xs:complexType name="Service">
+		<xs:sequence>
+			<xs:element name="command" type="tns:Command" minOccurs="1"	maxOccurs="unbounded" />
+		</xs:sequence>
+		<xs:attribute name="category" type="tns:CategoryType" use="required" />
+	</xs:complexType>
+
+	<!--simple type for tag's attribute category -->
+	<xs:simpleType name="CategoryType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="adminservice" />
+			<xs:enumeration value="libraryservice" />
+			<xs:enumeration value="clientservice" />
+		</xs:restriction>
+	</xs:simpleType>
+
+
+	<!--complex type for tag meal -->
+	<xs:complexType name="Command">
+		<xs:sequence>
+			<xs:element name="name" type="tns:Name" minOccurs="1" maxOccurs="unbounded" />
+			<xs:element name="bookId" type="tns:BookId" minOccurs="1" maxOccurs="unbounded" />
+			<xs:element name="userId" type="tns:UserId" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="bookName" type="tns:BookName" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="bookAuthor" type="tns:BookAuthor"	minOccurs="0" maxOccurs="unbounded" />
+			<xs:element name="bookYear" type="tns:BookYear" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<!--simple types for tag's attributes -->
+	<xs:simpleType name="Name">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Za-z\s.-]+" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="BookId">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[\d\s]{1,9}" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="UserId">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[\d\s]{1,9}" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="BookName">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="^$|[A-Za-z\s.-]+" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="BookAuthor">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Za-z\s.-]+" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="BookYear">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[\d\s]{1,9}" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
