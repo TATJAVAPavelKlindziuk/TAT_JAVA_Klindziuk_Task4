@@ -1,4 +1,4 @@
-package com.klindziuk.parsing.dom;
+package com.klindziuk.parsing.parser.dom;
 
 import com.klindziuk.parsing.model.BookCommand;
 import com.sun.org.apache.xerces.internal.parsers.DOMParser;

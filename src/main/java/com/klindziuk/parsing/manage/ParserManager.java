@@ -11,10 +11,10 @@ import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.xml.sax.SAXException;
 
-import com.klindziuk.parsing.dom.CommandDomParser;
 import com.klindziuk.parsing.model.BookCommand;
-import com.klindziuk.parsing.sax.CommandSaxParser;
-import com.klindziuk.parsing.stax.CommandStaxParser;
+import com.klindziuk.parsing.parser.dom.CommandDomParser;
+import com.klindziuk.parsing.parser.sax.CommandSaxParser;
+import com.klindziuk.parsing.parser.stax.CommandStaxParser;
 
 /**
  * @author Pavel_Klindziuk

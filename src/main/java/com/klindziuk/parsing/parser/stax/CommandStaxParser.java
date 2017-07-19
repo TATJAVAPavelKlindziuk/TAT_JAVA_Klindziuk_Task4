@@ -1,4 +1,4 @@
-package com.klindziuk.parsing.stax;
+package com.klindziuk.parsing.parser.stax;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

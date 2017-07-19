@@ -1,4 +1,4 @@
-package com.klindziuk.parsing.stax;
+package com.klindziuk.parsing.parser.stax;
 
 import com.klindziuk.parsing.command.TagEnum;
 import com.klindziuk.parsing.model.BookCommand;

@@ -1,4 +1,4 @@
-package com.klindziuk.parsing.sax;
+package com.klindziuk.parsing.parser.sax;
 
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
