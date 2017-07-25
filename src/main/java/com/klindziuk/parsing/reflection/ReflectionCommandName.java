@@ -41,8 +41,10 @@ public class ReflectionCommandName {
 			parser.parse(filePath);
 			commandMap = parser.getCommandMap();
 		} catch (FileNotFoundException e) {
-			logger.error(INITIALIZING_EXCEPTION_MESSAGE + filePath);
-			e.printStackTrace();
+			logger.error(INITIALIZING_EXCEPTION_MESSAGE + filePath, e);
+				}
+		catch (IllegalArgumentException iaex) {
+			logger.error(INITIALIZING_EXCEPTION_MESSAGE + filePath, iaex);
 		}
 	}
 }

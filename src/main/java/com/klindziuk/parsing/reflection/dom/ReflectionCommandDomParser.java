@@ -24,7 +24,7 @@ public class ReflectionCommandDomParser {
 	private static final String COMMAND = "command";
 	private static final String PACKAGE = "com.klindziuk.parsing.reflection.mock.";
 	private static final String COMMAND_MESSAGE = "Adding new class to map - ";
-	private static final String INVALID_PATH_EXCEPTION_MESSAGE = "System canot find file or path.";
+	private static final String INVALID_PATH_EXCEPTION_MESSAGE = "System cannot find file or path.";
 	private static final String INSTANTIATION_EXCEPTION_MESSAGE = "Error during instantiation";
 	private static final String SAX_EXCEPTION_MESSAGE = "Cannot parse file.Bad document format of file - ";
 	private static final String CLASS_NOT_FOUND_EXCEPTION_MESSAGE = "Cannot find class to initialize on the classpath at runtime - ";
@@ -50,7 +50,7 @@ public class ReflectionCommandDomParser {
 	 */
 	public void parse(String filePath) throws FileNotFoundException {
 		if (null == filePath || filePath.isEmpty()) {
-			throw new FileNotFoundException(INVALID_PATH_EXCEPTION_MESSAGE);
+			throw new IllegalArgumentException(INVALID_PATH_EXCEPTION_MESSAGE);
 		}
 		commandMap = new HashMap<>();
 		String commandName = "";
