@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.klindziuk.com/reflection" xmlns:tns="http://www.klindziuk.com/reflection"
+	elementFormDefault="qualified">
+	
+		<xs:element name="commandlist">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="command" type="tns:Command" minOccurs="1"	maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>	
+	
+		<!--simple types for tag's attributes -->
+	<xs:simpleType name="Command">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Za-z\s.-]+" />
+		</xs:restriction>
+	</xs:simpleType>
+	
+</xs:schema>

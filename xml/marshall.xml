@@ -1,95 +1,75 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<book xmlns="http://www.epam.mn.com/book"
-            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xsi:schemaLocation="http://www.epam.mn.com/book book.xsd">
-    <service category ="adminservice">
-        <command>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bookcommands xmlns:ns2="http://www.epam.klindziuk.com/bookcommands">
+    <item category="adminservice">
         <name>addbook</name>
-        <bookId>2</bookId>
         <userId> </userId>
+        <bookId>2</bookId>
         <bookName> </bookName>
         <bookAuthor>FirstAuthor</bookAuthor>
         <bookYear>2016</bookYear>
-        </command>
-    </service> 
-<service category ="adminservice">
-        <command>
+    </item>
+    <item category="adminservice">
         <name>updatebookdescription</name>
-        <bookId>4</bookId>
         <userId> </userId>
+        <bookId>4</bookId>
         <bookName>Updated Book</bookName>
         <bookAuthor>Updated Author</bookAuthor>
         <bookYear> </bookYear>
-        </command>
-    </service>
-<service category ="adminservice">
-        <command>
+    </item>
+    <item category="adminservice">
         <name>setbookavailable</name>
-        <bookId>3</bookId>
         <userId> </userId>
+        <bookId>3</bookId>
         <bookName> </bookName>
         <bookAuthor> </bookAuthor>
         <bookYear> </bookYear>
-        </command>
-    </service>
-<service category ="adminservice">
-        <command>
+    </item>
+    <item category="adminservice">
         <name>deletebook</name>
-        <bookId>3</bookId>
         <userId> </userId>
+        <bookId>3</bookId>
         <bookName>Name</bookName>
         <bookAuthor>Author</bookAuthor>
         <bookYear>2001</bookYear>
-        </command>
-    </service>
-<service category ="adminservice">
-        <command>
+    </item>
+    <item category="adminservice">
         <name>deletebookbyid</name>
+        <userId> </userId>
         <bookId>4</bookId>
-        <userId> </userId>
         <bookName> </bookName>
         <bookAuthor> </bookAuthor>
         <bookYear> </bookYear>
-        </command>
-    </service>
-<service category ="clientservice">
-        <command>
+    </item>
+    <item category="clientservice">
         <name>getallbooks</name>
-        <bookId> </bookId>
         <userId> </userId>
+        <bookId> </bookId>
         <bookName> </bookName>
         <bookAuthor> </bookAuthor>
         <bookYear> </bookYear>
-        </command>
-    </service>
-<service category ="adminservice">
-        <command>
+    </item>
+    <item category="adminservice">
         <name>getuserbooks</name>
-        <bookId> </bookId>
         <userId>2</userId>
+        <bookId> </bookId>
         <bookName> </bookName>
         <bookAuthor> </bookAuthor>
         <bookYear> </bookYear>
-        </command>
-    </service>
-<service category ="libraryservice">
-        <command>
+    </item>
+    <item category="libraryservice">
         <name>findbyname</name>
-        <bookId> </bookId>
         <userId> </userId>
+        <bookId> </bookId>
         <bookName>nametofind</bookName>
         <bookAuthor> </bookAuthor>
         <bookYear> </bookYear>
-        </command>
-    </service>
-<service category ="libraryservice">
-        <command>
+    </item>
+    <item category="libraryservice">
         <name>findbyauthor</name>
-        <bookId> </bookId>
         <userId> </userId>
+        <bookId> </bookId>
         <bookName> </bookName>
         <bookAuthor>authortofind</bookAuthor>
         <bookYear> </bookYear>
-        </command>
-    </service>
- </book>
+    </item>
+</bookcommands>

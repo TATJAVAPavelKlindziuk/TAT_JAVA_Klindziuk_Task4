@@ -2,20 +2,35 @@ package com.klindziuk.parsing.model;
 
 import java.io.Serializable;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * @author Pavel_Klindziuk
  * Model of BookCommand entity
  */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlRootElement( namespace = "http://www.epam.klindziuk.com/bookcommands", name = "bookcommands") 
 public class BookCommand implements Serializable {
 	private static final long serialVersionUID = -221094322553271387L;
+	@XmlElement(required = true)
 	private String name;
+	@XmlAttribute(required = true)
 	private String category;
+	@XmlElement(required = false)
 	private String userId;
+	@XmlElement(required = false)
 	private String bookId;
+	@XmlElement(required = false)
 	private String bookName;
+	@XmlElement(required = false)
 	private String bookAuthor;
+	@XmlElement(required = false)
 	private String bookYear;
-
+	    
 	public BookCommand() {
 	}
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-	targetNamespace="http://www.epam.mn.com/book" xmlns:tns="http://www.epam.mn.com/book"
+	targetNamespace="http://www.klindziuk.com/bookcommands" xmlns:tns="http://www.klindziuk.com/bookcommands"
 	elementFormDefault="qualified">
 
 	<!--complex type for root element -->
@@ -13,7 +13,7 @@
 		</xs:complexType>
 	</xs:element>
 
-	<!--complex type for element part -->
+	<!--complex type for element service -->
 	<xs:complexType name="Service">
 		<xs:sequence>
 			<xs:element name="command" type="tns:Command" minOccurs="1"	maxOccurs="unbounded" />
@@ -31,7 +31,7 @@
 	</xs:simpleType>
 
 
-	<!--complex type for tag meal -->
+	<!--complex type for tag command -->
 	<xs:complexType name="Command">
 		<xs:sequence>
 			<xs:element name="name" type="tns:Name" minOccurs="1" maxOccurs="unbounded" />

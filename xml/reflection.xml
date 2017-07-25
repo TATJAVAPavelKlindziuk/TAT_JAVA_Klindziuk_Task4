@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reflection xmlns="http://www.epam.klindziuk.com/reflection"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://www.klindziuk.com/reflection file:///C:/Users/Pavel_Klindziuk/Program_Files/eclipse/workspace/Parsing/xsd/reflection.xsd">
+<commandlist>
+<command>AddBook</command>
+<command>AddBookToWishList</command>
+<command>BanUser</command>
+<command>UnBanUser</command>
+<command>DeleteBookById</command>
+<command>FindByAuthor</command>
+<command>FindByName</command>
+<command>GetAllBooks</command>
+<command>GetAllSubscriptions</command>
+<command>GetAllUsers</command>
+<command>GetBook</command>
+<command>GetUser</command>
+<command>GetUserBooks</command>
+<command>MarkIssuance</command>
+<command>MarkReturn</command>
+<command>GiveAdminRole</command>
+<command>RemoveAdminRole</command>
+<command>SetBookDeprecated</command>
+</commandlist>
+</reflection>

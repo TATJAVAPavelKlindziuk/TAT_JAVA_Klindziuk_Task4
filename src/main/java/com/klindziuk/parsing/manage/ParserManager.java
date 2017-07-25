@@ -36,9 +36,9 @@ public final class ParserManager {
 	 * @return - list of commands
 	 * @throws FileNotFoundException 
 	 */
-	public static List<BookCommand> parseWithDom(String filePath) throws FileNotFoundException {
+	public static List<BookCommand> parseWithDom(String filePath) throws IllegalArgumentException {
 		if (null == filePath || filePath.isEmpty()) {
-			throw new FileNotFoundException(INVALID_PATH_EXCEPTION_MESSAGE);
+			throw new IllegalArgumentException(INVALID_PATH_EXCEPTION_MESSAGE);
 		}
 		List<BookCommand> result = Collections.emptyList();
 		try {
@@ -58,9 +58,9 @@ public final class ParserManager {
 	 * @return
 	 * @throws FileNotFoundException
 	 */
-	public static List<BookCommand> parseWithSax(String filePath) throws FileNotFoundException {
+	public static List<BookCommand> parseWithSax(String filePath) throws IllegalArgumentException {
 		if (null == filePath || filePath.isEmpty()) {
-			throw new FileNotFoundException(INVALID_PATH_EXCEPTION_MESSAGE);
+			throw new IllegalArgumentException(INVALID_PATH_EXCEPTION_MESSAGE);
 		}
 		List<BookCommand> result = Collections.emptyList();
 		try {
@@ -80,9 +80,9 @@ public final class ParserManager {
 	 * @return
 	 * @throws FileNotFoundException
 	 */
-	public static List<BookCommand> parseWithStax(String filePath) throws FileNotFoundException {
+	public static List<BookCommand> parseWithStax(String filePath) throws IllegalArgumentException {
 		if (null == filePath || filePath.isEmpty()) {
-			throw new FileNotFoundException(INVALID_PATH_EXCEPTION_MESSAGE);
+			throw new IllegalArgumentException(INVALID_PATH_EXCEPTION_MESSAGE);
 		}
 		List<BookCommand> result = Collections.emptyList();
 		try {
