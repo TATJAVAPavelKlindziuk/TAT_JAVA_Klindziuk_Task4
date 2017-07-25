@@ -27,7 +27,7 @@ public class ReflectionCommandDomParser {
 	private static final String INVALID_PATH_EXCEPTION_MESSAGE = "System canot find file or path.";
 	private static final String INSTANTIATION_EXCEPTION_MESSAGE = "Error during instantiation";
 	private static final String SAX_EXCEPTION_MESSAGE = "Cannot parse file.Bad document format of file - ";
-	private static final String CLASS_NOT_FOUND_EXCEPTION_MESSAGE = "Cannot find class to initialize - ";
+	private static final String CLASS_NOT_FOUND_EXCEPTION_MESSAGE = "Cannot find class to initialize on the classpath at runtime - ";
 	private static final String IO_EXCEPTION_MESSAGE = "Error during reading file - ";
 	private static final String ILLEGAL_ACCESS_EXCEPTION_MESSAGE = "Cannot get access to class at runtime.";
 	private Map<String, Command> commandMap;
@@ -44,7 +44,7 @@ public class ReflectionCommandDomParser {
 	 *
 	 * @throws SAXException if problem with parsing
 	 * @throws IOException  if problem with file
-	 * @throws ClassNotFoundException if cannot find the class
+	 * @throws ClassNotFoundException  if class cannot be found on the classpath at runtime
 	 * @throws IllegalAccessException if problem with access
 	 * @throws InstantiationException if problem with instantiation
 	 */
